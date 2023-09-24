@@ -1,9 +1,11 @@
 <?php
 
-$first_name = "fifi";
-$last_name = "${first_name} Gigi";
+$x = 5;
+$y = 10;
+//heredoc
+$text = <<<TEXT
+    Line 1 = $x
+    Line 2 = $y
+TEXT;
 
-echo $first_name;
-
-echo "<br>";
-
+echo nl2br($text);
