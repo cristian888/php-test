@@ -1,33 +1,24 @@
-<?php
+<?php declare(strict_types=1);
+
+require ('functions.php');
+
+familyName('Jani');
+familyName('Hege');
+familyName('Stale');
+familyName('Kai Jim');
+
+
+$audi = 'Audi';
+carsIlove($audi);
+
 
     //Anonymous function expected
     $getPaths = function ($type) {
         self::validateType($type);
         return isset(self::$paths[$type]) ? self::$paths[$type] : [];
     };
-function getPosts(): array
-{
-    $posts = [
-        [
-            'title' => 'How to learn PHP',
-            'content' => 'This is how you learn PHP.',
-        ],
-        [
-            'title' => 'How to learn MySQL',
-            'content' => 'This is how you learn MySQL.',
-        ],
-        [
-            'title' => 'How to learn Nginx',
-            'content' => 'This is how you learn Nginx.',
-        ],
-    ];
-    return $posts;
-};
 
-function getPostText (int $numPosts): string
-{
-    return $numPosts === 1 ? 'post' : 'posts';
-}
+
 
 $title = 'My Blog';
 //define variable $posts as an array
