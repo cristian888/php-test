@@ -1,5 +1,10 @@
 <?php
 
+    //Anonymous function expected
+    $getPaths = function ($type) {
+        self::validateType($type);
+        return isset(self::$paths[$type]) ? self::$paths[$type] : [];
+    };
 function getPosts(): array
 {
     $posts = [
@@ -17,7 +22,7 @@ function getPosts(): array
         ],
     ];
     return $posts;
-}
+};
 
 function getPostText (int $numPosts): string
 {
