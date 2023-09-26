@@ -2,6 +2,12 @@
 
 require ('functions.php');
 
+fullName('John', 'Doe');
+fullName('Jane', 'Doe');
+fullName('John', 'Smith');
+
+echo"<br>";
+
 familyName('Jani');
 familyName('Hege');
 familyName('Stale');

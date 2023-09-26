@@ -1,5 +1,10 @@
 <?php
 
+function fullName ($firstName, $lastName)
+{
+    echo "$firstName $lastName <br>";
+}
+
 function familyName($fname)
 {
     echo "$fname Refnes.<br>";
